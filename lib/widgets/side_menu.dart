@@ -99,8 +99,8 @@ class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Scrollbar(
-        isAlwaysShown: true,
         controller: _scrollController,
+        thumbVisibility: true, // Show the scrollbar thumb
         child: ListView(
           controller: _scrollController,
           padding: const EdgeInsets.symmetric(vertical: 12.0),
@@ -160,7 +160,7 @@ class __LibraryPlaylistsState extends State<_LibraryPlaylists> {
                         ))
                     .toList(),
               ],
-            )
+            ),
           ],
         ),
       ),
